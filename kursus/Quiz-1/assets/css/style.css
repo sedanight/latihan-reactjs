@@ -1,0 +1,263 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins";
+    font-size: 22px;
+}
+
+/* Buatlah styling setiap section dibawah ini */
+.navigation
+{
+    margin: 0 auto;
+    text-align: center; 
+}
+.container
+{
+    display:grid;
+    margin: 0 auto;
+}
+.container:hover{
+    cursor:pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0.2);
+}
+.container_hero
+{
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+
+.container_bottom{
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+}
+.container_bottom p{
+    font-size: 15px;
+    text-align: center;
+}
+.container_bottom p button{
+    font-size: 10px;
+    margin-left: 50px;
+}
+
+.container_support{
+    margin-top: 25px;
+    margin-bottom: 25px;  
+}
+.container_support p{
+    font-size: 17px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.container_support .logo{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container_features_title{
+    border-radius: 20px;
+    margin:auto;
+}
+.container_features_title h1{
+    border-bottom: 5px solid black;
+    font-size: 20px;
+}
+
+.container_pricing_title{
+    border-radius: 20px;
+    margin:auto;
+}
+.container_pricing_title h1{
+    border-bottom: 5px solid black;
+    font-size: 20px;
+}
+.container_pricing .container_pricing-card{
+    border: 15px solid black;
+}
+
+/* Aturlah breakpoint dibawah ini menggunakan media queries agar responsive dibawah sini*/
+
+@media only screen and (max-width: 480px){
+    .container{
+        grid-template-columns: 1fr;
+        column-gap: 50px;
+        row-gap: 50px;
+    }
+    .container_hero{
+    margin: 0 0 auto;
+    padding: 20px;
+    min-height: 100px;
+    }
+    .container_hero h1{
+        font-size: 20px;
+        color: azure;
+    }
+    .container_hero p{
+        font-size: 10px;
+        color: aliceblue;
+    }
+    .container_features{
+        max-width: 1740px;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+    }
+    .container_features .container_features-card h3{
+        text-align:center;
+        margin:2vh;
+    }
+    .container_features .container_features-card p{
+        font-size: 10px;
+        padding-bottom: 2vh;
+    }
+    .container_pricing{
+        max-width: 1240px;
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 50px;
+        row-gap: 50px;
+    }
+    .container_features .container_pricing-card h3{
+        text-align:justify;
+        margin: 0 auto;
+        margin:5vh;
+    }
+    .container_features .container_pricing-card p{
+        font-size: 10px;
+        margin: 0  auto;
+        padding-top: 2vh;
+    }
+}
+
+@media only screen and (min-width: 480px) and ( max-width: 780px ){
+    .container{
+        grid-template-columns: 1fr;
+        column-gap: 50px;
+        row-gap: 50px;
+        
+    }
+    .container_hero{
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    }
+    .container_hero h1{
+        font-size: 20px;
+        color: azure;
+    }
+    .container_hero p{
+        font-size: 10px;
+        color: aliceblue;
+        padding-left: 50px;
+    }
+    .container_features{
+        max-width: 1740px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 50px;
+        row-gap: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .container_features .container_features-card h3{
+        text-align:center;
+        margin:2vh;
+    }
+    .container_features .container_features-card p{
+        font-size: 10px;
+        padding-bottom: 2vh;
+    }
+    .container_pricing{
+        max-width: 1240px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 50px;
+        row-gap: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .container_features .container_pricing-card h3{
+        text-align:justify;
+        margin: 0 auto;
+        margin:5vh;
+    }
+    .container_features .container_pricing-card p{
+        font-size: 10px;
+        margin: 0  auto;
+        padding-top: 2vh;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width:2700px){
+    
+    .container{
+        grid-template-columns: 1fr;
+        column-gap: 50px;
+        row-gap: 50px;
+        
+    }
+    .container_hero{
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+    }
+    .container_hero h1{
+        font-size: 20px;
+        color: azure;
+    }
+    .container_hero p{
+        font-size: 10px;
+        color: aliceblue;
+        padding-left: 50px;
+    }
+    .container_features{
+        max-width: 1740px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 50px;
+        row-gap: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .container_features .container_features-card h3{
+        text-align:center;
+        margin:2vh;
+    }
+    .container_features .container_features-card p{
+        font-size: 10px;
+        padding-bottom: 2vh;
+    }
+    .container_pricing{
+        max-width: 1240px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color:azure;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    
+    .container_pricing .container_pricing-card h1{
+        font-size: 40px;
+        margin: 0 auto;
+    }
+    .container_pricing .container_pricing-card small{
+        font-size: 30px;
+        margin: 0  auto;
+        padding-top: 2vh;
+    }
+    .container_pricing .container_pricing-card ul li{
+        font-size: 10px;
+        margin: 0  auto;
+        padding-top: 2vh;
+    }
+
+}
